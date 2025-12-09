@@ -1,0 +1,134 @@
+/* Reset browser defaults to remove default spaiccng, make sizing predictable, set clean font, add readable text spacing */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Basic Page Sytles to set clean font and give page soft background */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  background-color: linen;
+  color: slategray;
+}
+
+header {
+  background-color: teal;
+  color: white;
+  padding: 30px 0;
+  text-align: center;
+}
+
+nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Section Styling  */
+
+
+#about {
+  padding: 50px 20px;
+  max-width: 900px;
+  margin: auto; 
+  text-align: center;
+}
+
+#about h2 {
+  color: teal;
+  margin-bottom: 20px;
+}
+
+#about p1 {
+  font-size: 18px;
+}
+
+.project {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: slategray 1px 1px 5px;
+  flex: 1 1 250px;
+  transition: transform 0.3s;
+}
+
+.project:hover {
+  transform: scale(1.02);
+}
+
+#skills {
+  padding: 50px 20px; 
+  max-width: 900px;
+  margin: 0 0 0 0; 
+  text-align: left;
+}
+
+#skills ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: flex-start; 
+}
+
+#skills li {
+  background-color: white;
+  padding: 10px 15px;
+  border-left: 5px solid teal;
+  border-radius: 5px;
+  list-style: none;
+}
+
+#resume h2 {
+  color: teal;
+  margin-bottom: 20px;
+}
+
+#resume a {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  background-color: teal;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+#resume a:hover {
+  background-color: darkcyan;
+}
+
+#contact h2 {
+  color: teal;
+  margin-bottom: 20px;
+}
+
+#contact p {
+  font-size: 18px;
+}
+
+footer {
+  background: slategray;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 50px;
+}
+
+@media (max-width: 600px) {
+  #projects {
+    flex-direction: column;
+    align-items: flex-start; 
+  }
+  #skills ul {
+    flex-direction: column;
+    align-items: flex-start; 
+  }
+}
