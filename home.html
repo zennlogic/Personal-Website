@@ -3,66 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Porfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <meta name="description" content="This is my personal website." >
-    
+    <title>My Portfolio</title> <link rel="stylesheet" href="style.css">
+    <meta name="description" content="This is my personal website.">
 </head>
 <body>
     <header>
-        <h1> Oubah's Portfolio </h1>
-<nav>
-    <a href="#about">About Me </a>
-    <a href="#projects">Projects </a>
-    <a href="#skills">Soft and Technical Skills </a>
-    <a href="#resume">Curriculum Vitae </a>
-    <a href="#contact">Contact Me </a>
-
-</nav>    
+        <h1>Oubah's Portfolio</h1>
+        <nav>
+            <a href="#about">About Me</a>
+            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="#resume">CV</a>
+            <a href="#contact">Contact</a>
+        </nav>    
     </header>
 
     <section id="about">
-        <h2> About Me </h2>
-        <p> Hey there! I wrote my first line of code back in <strong>2017</strong> a simple "Hello World"
-        that facinated me. I spent the next year coding <strong> two hours a day, religiously</strong> until I got HTML and CSS down solid.</p>
-
+        <h2>About Me</h2>
+        <p>Hey there! I wrote my first line of code back in <strong>2017</strong>—a simple "Hello World"
+        that fascinated me. I spent the next year coding <strong>two hours a day, religiously</strong> until I got HTML and CSS down solid.</p>
     </section>
 
     <section id="projects">
-        <h2> Projects </h2>
-        <div class="project">
-        <h3> Portfolio page</h3>
-        <p> My first Portfolio page build with HTML and CSS</p>
+        <h2>Projects</h2>
+        <div class="project-container"> <div class="project">
+                <h3>Portfolio Page</h3>
+                <p>My first Portfolio page built with HTML and CSS.</p>
+            </div>
+            <div class="project">
+                <h3>Calculator App</h3>
+                <p>A JavaScript calculator to test my logic skills.</p>
+            </div>
         </div>
-       
     </section>
 
     <section id="skills">
         <h2>Technical Skills</h2>
         <ul>
-            <li>HTML: Structure web pages </li>
-            <li>CSS : Style Web Pages</li>
+            <li>HTML: Structure Web Pages</li>
+            <li>CSS: Style Web Pages</li>
         </ul>
-        <h2> Soft Skills </h2>
+        <h2>Soft Skills</h2>
         <ul>
-            <li> Communicaiton </li>
-            <li> Critical Thinking</li>
+            <li>Communication</li> <li>Critical Thinking</li>
         </ul>
+    </section>
 
-    </section>
     <section id="resume">
-    <h2> Curriculum Vitae</h2>
-    <p> Click Here <a href="#"> Curriculum Vitae</a></p>
+        <h2>Curriculum Vitae</h2>
+        <a href="#" class="btn">Download Resume</a>
     </section>
-<section id="contact">
-    <h2> Contact Me</h2>
-    <p> Email: oubawaleh@gmail.com</p>
-    <p> LinkedIn: <a href="#"> LinkedIn </a></p>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    
+    <form action="#" method="POST">
+        
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="user_name" placeholder="Your Name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="user_email" placeholder="example@gmail.com" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="user_message" rows="5" required></textarea>
+
+        <button type="submit">Send Message</button>
+        
+    </form>
 </section>
 
-<footer>
-    <p> &copy; 2025 Oubah's Portfolio</p>
-</footer>
-
+    <footer>
+        <p>&copy; 2025 Oubah's Portfolio</p>
+    </footer>
 </body>
 </html>

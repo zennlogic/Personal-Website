@@ -1,12 +1,14 @@
-/* Reset browser defaults to remove default spaiccng, make sizing predictable, set clean font, add readable text spacing */
-
+/* GLOBAL RESET & BASICS */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Basic Page Sytles to set clean font and give page soft background */
+html {
+  scroll-behavior: smooth; /* Makes the nav links slide instead of jump */
+}
+
 body {
   font-family: Arial, Helvetica, sans-serif;
   line-height: 1.6;
@@ -14,6 +16,7 @@ body {
   color: slategray;
 }
 
+/* HEADER & NAV */
 header {
   background-color: teal;
   color: white;
@@ -32,30 +35,41 @@ nav a:hover {
   text-decoration: underline;
 }
 
-/* Section Styling  */
+/* SHARED SECTION STYLING */
+/* This makes sure all sections align in the center properly */
+section {
+    padding: 50px 20px;
+    max-width: 900px;
+    margin: auto; 
+}
 
+h2 {
+    color: teal;
+    margin-bottom: 20px;
+}
 
+/* ABOUT */
 #about {
-  padding: 50px 20px;
-  max-width: 900px;
-  margin: auto; 
   text-align: center;
 }
 
-#about h2 {
-  color: teal;
-  margin-bottom: 20px;
+#about p {
+  font-size: 18px;
 }
 
-#about p1 {
-  font-size: 18px;
+/* PROJECTS */
+/* This is a container to make Flexbox work */
+.project-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap; /* Allows projects to wrap to next line if screen is small */
 }
 
 .project {
   background-color: white;
   padding: 20px;
   border-radius: 10px;
-  box-shadow: slategray 1px 1px 5px;
+  box-shadow: 1px 1px 5px slategray; /* 
   flex: 1 1 250px;
   transition: transform 0.3s;
 }
@@ -64,18 +78,13 @@ nav a:hover {
   transform: scale(1.02);
 }
 
-#skills {
-  padding: 50px 20px; 
-  max-width: 900px;
-  margin: 0 0 0 0; 
-  text-align: left;
-}
-
+/* SKILLS */
 #skills ul {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
-  justify-content: flex-start; 
+  margin-bottom: 20px;
+  padding-left: 0; 
 }
 
 #skills li {
@@ -86,11 +95,7 @@ nav a:hover {
   list-style: none;
 }
 
-#resume h2 {
-  color: teal;
-  margin-bottom: 20px;
-}
-
+/* RESUME */
 #resume a {
   display: inline-block;
   text-decoration: none;
@@ -105,15 +110,7 @@ nav a:hover {
   background-color: darkcyan;
 }
 
-#contact h2 {
-  color: teal;
-  margin-bottom: 20px;
-}
-
-#contact p {
-  font-size: 18px;
-}
-
+/* FOOTER */
 footer {
   background: slategray;
   color: white;
@@ -122,13 +119,13 @@ footer {
   margin-top: 50px;
 }
 
+/* MOBILE RESPONSIVE */
 @media (max-width: 600px) {
-  #projects {
+  .project-container {
     flex-direction: column;
-    align-items: flex-start; 
   }
+  
   #skills ul {
     flex-direction: column;
-    align-items: flex-start; 
   }
 }
