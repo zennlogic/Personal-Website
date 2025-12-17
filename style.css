@@ -17,6 +17,39 @@ body {
 }
 
 /* HEADER & NAV */
+
+#hamburger{
+  padding: 3px;
+  width: 50px;
+  display: none;
+}
+
+/*! Hamburger menu */
+@media(max-width: 600px){
+  #hamburger{
+    display: block;
+  }
+  .nav-links.open{
+    display: block;
+  }
+  .nav-links{
+    display: none;
+
+  }
+
+}
+
+#hamburger{
+  padding: 3px;
+  width: 50px;
+  display: none;
+}
+
+
+
+
+
+
 header {
   background-color: teal;
   color: white;
@@ -69,7 +102,7 @@ h2 {
   background-color: white;
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 1px 1px 5px slategray; /* 
+  box-shadow: 1px 1px 5px slategray;  
   flex: 1 1 250px;
   transition: transform 0.3s;
 }
