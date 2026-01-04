@@ -1,11 +1,11 @@
-#ignore macOS system files
+# ignore macOS system files
 .DS_Store
-#ignore Node modules 
+# ignore Node modules 
 node_modules/
-#VS code workspace setting 
+# ignore VS code workspace setting 
 .vscode/
-#log files 
+# Ignore log files 
 *.log
-#build.dist folders
+# ignore build.dist folders
 dist/
 build/
