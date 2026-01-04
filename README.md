@@ -43,7 +43,8 @@ python job_tracker.py
 
 **Usage Example**
 
---- My Job Applications Tracker ---
+My Job Applications Tracker
+
 1. Add New Job Application
 2. View All Applications
 3. Calculate Average Salary Offer
@@ -59,11 +60,11 @@ Application for Google added successfully.
 
 **Future Improvements**
 
-Persistence: Add Save/Load functionality (CSV/JSON) so data isn't lost when the program closes.
+1. Persistence: Add Save/Load functionality (CSV/JSON) so data isn't lost when the program closes.
 
-Search: Filter jobs by salary range or name.
+2. Search: Filter jobs by salary range or name.
 
-GUI: Build a graphical window.
+3. GUI: Build a graphical window.
 
-Author
+Author:
 Oubah
